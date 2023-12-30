@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/bootnavbar.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Bootstrap JavaScript and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Test</title>
+    <meta name="description" content="Multi level hover dropdown Navbar for bootstrap 4 and bootstrap 5"/>
+    <meta name="keywords" content="Multi level hover dropdown Navbar for bootstrap 4 and bootstrap 5"/>
+    <link rel="shortcut icon" href="image/logo.jpeg" type="image/x-icon" />
+    <title>I.T Computer</title>
+  </head>
+
+  <body>
+    <nav id="top">
+      <div class="container">
+        <div class="top-nav-bar">
+          <div class="pull-left">
+            <nav class="navbar navbar-expand-lg">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="container">
+                  <!-- Your navbar items go here -->
+                  <form action id="currency">
+                    <div class="btn-group">
+                      <a class="btn-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdown">
+                        <strong>$</strong>
+                        <span class="hidden-xs hidden-sm hidden-md">Currency</span> <i class="fa fa-caret-down"></i>
+                      </a>
+                      <ul class="dropdown-menu top-dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><button class="currency-select btn btn-link btn-drop-bar" type="button" name="EUR">€ Euro</button></li>
+                        <li><button class="currency-select btn btn-link" type="button" name="GBP">£ Pound Sterling</button></li>
+                        <li><button class="currency-select btn btn-link" type="button" name="USD">$ US Dollar</button></li>
+                      </ul>
+                    </div>
+                    <input type="hidden" name="code" value>
+                    <input type="hidden" name="redirect">
+                  </form>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div id="top-links" class="nav pull-right">
+            <ul class="list-inline">
+              <li><a href title="Checkout"><i class="bi bi-telephone-fill"></i>
+                  <span class="hidden-xs hidden-sm hidden-md">012</span></a>
+              </li>
+              <div id="navbarNav">
+                <nav class="navbar navbar-expand-lg">
+                  <li class="dropdown"><a title="My Account" class="dropdown-toggle" data-toggle="dropdown"><i
+                    class="bi bi-person-fill"></i> <span class="hidden-xs hidden-sm hidden-md">My Account</span>
+                  <span class="caret"></span></a>
+                  <ul class="dropdown-menu top-dropdown-menu dropdown-menu-right">
+                    <li><button class="currency-select btn btn-link btn-drop-bar" type="button" name="EUR">Register</button></li>
+                    <li><button class="currency-select btn btn-link" type="button" name="GBP">Login</button></li>
+                  </ul>
+                  </li>
+                </nav>
+              </div>
+              <li><a href id="wishlist-total" title="Wish List (0)"><i class="bi bi-heart-fill"></i> <span
+                    class="hidden-xs hidden-sm hidden-md">Wish List
+                    (0)</span></a>
+              </li>
+              <li><a href title="Shopping Cart"><i class="bi bi-cart3"></i>
+                  <span class="hidden-xs hidden-sm hidden-md">Shopping Cart</span></a>
+              </li>
+              <li><a href title="Checkout"><i class="bi bi-box-arrow-right"></i>
+                  <span class="hidden-xs hidden-sm hidden-md">Checkout</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div id="logo">
+              <a href="#"><img src="image/logo.png" title="I.T COMPUTER" alt="I.T COMPUTER" class="img-responsive"></a>
+            </div>
+          </div>
+          <div class="col-sm-5">&nbsp;
+          </div>
+  
+          <div class="col-sm-3">
+            <div id="search" class="input-group">
+              <input type="text" name="search" value="" placeholder="Search" class="form-control input-lg">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-lg "><i class="bi bi-search "></i></button>
+              </span>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </header>
+    <div class="container menu-bar-list">
+      <nav class="navbar navbar-expand-lg navbar-light" id="main_navbar">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent second-menu-list">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" onclick="loadContent('page/home-page.html', 'home')" id="manu-item" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item" onclick="loadContent('page/about-us.html', 'aboutus')">
+              <a class="nav-link" id="manu-item" href="#">About US</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" onclick="loadContent('page/laptop.html', 'laptop')" id="manu-item" role="button" data-bs-toggle="dropdown">Laptop</a>
+              <ul class="dropdown-menu">
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item" href="#" role="button" data-bs-toggle="dropdown">ASUS</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item" onclick="loadContent('page/rog-gaming.html', 'roggaming')" href="#">ROG GAMING</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item" onclick="loadContent('page/tuf-gaming.html', 'tufgaming')" href="#">TUF GAMING</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item" onclick="loadContent('page/vivobook.html', 'vivobook')" href="#">VIVOBOOK</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item" onclick="loadContent('page/zenbook.html', 'zenbook')" href="#">ZENBOOK</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item" href="#" role="button" data-bs-toggle="dropdown">MIS</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item" href="#">GAMING LAPTOP</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item" href="#" role="button" data-bs-toggle="dropdown">LENOVO</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item" href="#">LEGION</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item" href="#">THINKBOOK</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item" href="#">THINKPAD</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item" href="#">YOGA</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item" href="#">IDEAPAD</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" onclick="loadContent('page/desktop.html', 'desktop')" id="manu-item" href="#" role="button">Destop</a>
+              <ul class="dropdown-menu">
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item" href="#" role="button">ALL-IN-ONE</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" onclick="loadContent('page/components.html', 'components')" id="manu-item" href="#" role="button" data-bs-toggle="dropdown">Components</a>
+              <ul class="dropdown-menu">
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item" href="#" role="button">CPU</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item" href="#" role="button">GPU</a>
+                  
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item" href="#" role="button">RAM</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item" href="#" role="button">STORAGE</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item" href="#" role="button">LIQUID COOLER</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item" href="#" role="button">MOTHER BOARD</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item" href="#" role="button">POWER SUPPLY</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item" href="#" role="button">CASING</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" onclick="loadContent('page/monitor.html', 'monitor')" id="manu-item" role="button" data-bs-toggle="dropdown">Monitor</a>
+              <ul class="dropdown-menu">
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item" href="#" role="button">ASUS</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item" href="#" role="button">MIS</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item" href="#" role="button">LENOVO</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" onclick="loadContent('page/accessories.html', 'accessories')" id="manu-item" role="button" data-bs-toggle="dropdown">Accessories</a>
+              <ul class="dropdown-menu">
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item" href="#" role="button" data-bs-toggle="dropdown">KEYBOARD</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item" href="#" role="button" data-bs-toggle="dropdown">HEADSET</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item" href="#" role="button" data-bs-toggle="dropdown">MOUSE</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item" href="#" role="button" data-bs-toggle="dropdown">MOUSEPAD</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-item" href="#" role="button" data-bs-toggle="dropdown">BAG</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item" onclick="loadContent('page/location.html', 'location')">
+              <a class="nav-link" id="manu-item" href="#">Location</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </div>
+
+    <!-- BODY ITEM -->
+    <div class="container">
+      <div class="content-bar">
+        <!-- MAIN ITEM -->
+        <div id="home" class="content"></div>
+        <div id="aboutus" class="content"></div>
+        <div id="laptop" class="content"></div>
+        <div id="desktop" class="content"></div>
+        <div id="components" class="content"></div>
+        <div id="monitor" class="content"></div>
+        <div id="accessories" class="content"></div>
+        <div id="location" class="content"></div>
+
+        <!-- SUB ITEM -->
+        <div id="roggaming" class="content"></div>
+        <div id="tufgaming" class="content"></div>
+        <div id="vivobook" class="content"></div>
+        <div id="zenbook" class="content"></div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="fooer">
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+              <h5>Information</h5>
+              <ul class="list-unstyled">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"> </a></li>
+                <li><a href="#"></a></li>
+                <li><a href="/pages/about_us.html">ABOUT US</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3">
+              <h5>Customer Service</h5>
+              <ul class="list-unstyled">
+                <li><a href="">Contact Us</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Site Map</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3">
+              <h5>Extras</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Gift Vouchers</a></li>
+                <li><a href="#">Affiliates</a></li>
+                <li><a href="#">Specials</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3">
+              <h5>My Account</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Order History</a></li>
+                <li><a href="#">Wish List</a></li>
+                <li><a href="#">Newsletter</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+          <p>Powered By <a href="#">HTML Assigment Group 10</a><br> I.T
+            COMPUTER
+            ©
+            2023</p>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootnavbar.js"></script>
+    <script>
+      new bootnavbar();
+    </script>
+  </body>
+</html>

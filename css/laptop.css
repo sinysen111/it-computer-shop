@@ -1,0 +1,20 @@
+.category-card {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  padding: 20px 20px 20px 20px;
+  margin: 0px 14px 0px 0px;
+}
+
+h3 {
+  color: #dd0f00;
+  margin-top: 10px;
+  font-weight: bold;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card-body ul li {
+  font-size: 10px;
+}
