@@ -1,6 +1,6 @@
 
 ul.dropdown-menu {
-  margin-top: 8px;
+  margin-top: -1px;
   z-index: 100;
 }
 #manu-item {
@@ -24,7 +24,7 @@ ul.dropdown-menu {
 
   .dropdown-menu > li a:hover,
   .dropdown-menu > li.show {
-    background: #007bff;
+    background: rgb(5, 53, 114);
     color: white;
   }
   .dropdown-menu > li.show > a {
@@ -128,6 +128,7 @@ li.dropdown-menu > li > a {
   }
   
   .pull-right {
+    margin-top: 4px;
     height: 36px;
     float: right;
   }
@@ -595,4 +596,9 @@ li.dropdown-menu > li > a {
   white-space: nowrap;
   background-color: transparent;
   border: 0;
+}
+
+ul .nav-item:hover {
+  background-color: rgb(5, 53, 114);
+  color: white;
 }
