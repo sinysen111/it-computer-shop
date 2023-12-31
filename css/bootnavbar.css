@@ -1,4 +1,7 @@
-
+link[rel="shortcut icon"] {
+  border-radius: 50%; /* Example for fully rounded corners */
+  border-radius: 10px; /* Example for less rounded corners */
+}
 ul.dropdown-menu {
   margin-top: -1px;
   z-index: 100;
