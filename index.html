@@ -65,9 +65,9 @@
                     class="bi bi-person-fill"></i> <span class="hidden-xs hidden-sm hidden-md">My Account</span>
                   <span class="caret"></span></a>
                 <ul class="dropdown-menu top-dropdown-menu dropdown-menu-right">
-                  <li><button class="currency-select btn btn-link btn-drop-bar" type="button"
+                  <li><button class="currency-select btn btn-link btn-drop-bar" onclick="loadContent('page/register.html', 'register')" type="button"
                       name="EUR">Register</button></li>
-                  <li><button class="currency-select btn btn-link" type="button" name="GBP">Login</button></li>
+                  <li><button class="currency-select btn btn-link" onclick="loadContent('page/login.html', 'login')"  type="button" name="GBP">Login</button></li>
                 </ul>
               </li>
             </nav>
@@ -318,6 +318,8 @@
       <div id="mousepad" class="content"></div>
       <div id="bag" class="content"></div>
       <div id="lenovo" class="content"></div>
+      <div id="register" class="content"></div>
+      <div id="login" class="content"></div>
     </div>
   </div>
 
