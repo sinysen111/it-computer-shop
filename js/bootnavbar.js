@@ -70,6 +70,18 @@ function loadContent(url, targetId) {
       if (targetElement) {
         targetElement.innerHTML = data;
         showContent(targetId);
+        const slider = document.querySelector('.carousel-inner');
+        const slides = slider.querySelectorAll('li .carousel-item');
+        const slideCount = slides.length;
+        let activeSlide = 0;
+        setInterval(() => {
+          slides[activeSlide]?.classList.remove('active');
+          activeSlide++;
+          if (activeSlide === slideCount) {
+            activeSlide = 0;
+          }
+          slides[activeSlide]?.classList.add('active');
+        }, 2000);
       }
     })
     .catch(error => console.error('Error loading content:', error));
