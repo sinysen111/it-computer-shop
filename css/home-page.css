@@ -65,4 +65,11 @@
 
 .carousel-inner {
   list-style-type: none;
+  margin-left: -9px;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 101.3%;
+  overflow: hidden;
 }
